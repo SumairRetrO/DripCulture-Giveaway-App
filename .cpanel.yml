@@ -9,5 +9,6 @@ deployment:
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp coupon_gen.html $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp login.php $DEPLOYPATH
