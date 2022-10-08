@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+    <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    #photo {
+        width: 500px;
+        height: 300px;
+        margin: 30px;
+        display: block;
+
+    }
+
+    .card-img-top {
+        justify-content: center;
+        align-items: center;
+        width: 120px
+    }
+
+    .card {
+        height: 100%;
+        width: 100%;
+        padding: 30px;
+
+    }
+
+    #mcanvas {
+        display: none;
+    }
+</style>
+
+<body>
+    <button onclick="download_cupon()">
+        Take Screenshot
+    </button>
+
+    <button onclick="download_image()">
+        Download
+    </button>
+    <div id="photo">
+        <div class="card">
+            <img class="card-img-top text-center" src="partner/image026.png" alt="Card image cap">
+            <div class="card-body">
+                <h3 class="card-title">Cupon Name</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <h1>Screenshot:</h1>
+    <div id="output"></div>
+
+
+    <script>
+        function download_cupon() {
+            let div = document.getElementById('photo');
+
+            html2canvas(div, {
+                allowTaint: true
+            }).then(
+                function (canvas) {
+                    document.getElementById('output').appendChild(canvas).setAttribute("id", "mcanvas");
+                    var mcanvas = document.getElementById("mcanvas");
+                    image = mcanvas.toDataURL("image/jpg").replace("image/jpg", 1.0, "image/octet-stream");
+                    var link = document.createElement('a');
+                    link.download = "cupon.png";
+                    link.href = image;
+                    link.click();
+
+
+                });
+
+
+        }
+        function download_image() {
+            var canvas = document.getElementById("mcanvas");
+            image = canvas.toDataURL("image/jpg").replace("image/jpg", 1.0, "image/octet-stream");
+            var link = document.createElement('a');
+            link.download = "my-image.png";
+            link.href = image;
+            link.click();
+        }
+
+    </script>
+
+</body>
+
+</html>
