@@ -255,16 +255,16 @@ h6 {
 }
 
 .container-fluid {
-    padding: 0 30px 25px;
+    padding: 0 30px 50px;
 }
 
 @media (min-width: 1024px) {
     .page-wrapper {
         margin-left: 240px;
     }
-    .footer {
+    /* .footer {
         left: 240px;
-    }
+    } */
 }
 
 @media (max-width: 1023px) {
@@ -1729,7 +1729,10 @@ textarea {
 }
 
 .footer {
-    left: 240px;
+    margin-top: 20px;
+    text-align: center;
+   
+    /* left: 240px; */
 }
 
 #chartdiv3 {
@@ -1815,9 +1818,9 @@ textarea {
     stroke-linejoin: round;
     stroke-linecap: round;
     stroke-dasharray: 500%;
-    stroke-dasharray: 0 /;
+    stroke-dasharray: 0 ;
     /* fixes IE prob */
-    stroke-dashoffset: 0 /;
+    stroke-dashoffset: 0 ;
     /* fixes IE prob */
     -webkit-animation: am-draw 40s;
     animation: am-draw 40s;
@@ -2105,7 +2108,7 @@ textarea {
     position: relative;
     top: 50%;
     transform: translateY(-50%) !important;
-    width: 70%;
+    width: 95%;
 }
 
 .modal-header .close {

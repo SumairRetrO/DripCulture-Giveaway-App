@@ -33,21 +33,6 @@
     <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<style>
-    #photo {
-        /* width: 100%; */
-        /* height: 100%; */
-        margin: 20px;
-        display: block;
-
-    }
-
-
-
-    #mcanvas {
-        display: none;
-    }
-</style>
 
 <body class="header-fix fix-sidebar">
     <!-- Main wrapper  -->
@@ -78,58 +63,7 @@
                     <!-- User profile and search -->
                     <ul class="navbar-nav my-lg-0">
                         <!-- Comment -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted text-muted  " href="#" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell"></i>
-                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right mailbox animated slideInRight">
-                                <ul>
-
-                                    <li>
-                                        <div class="header-notify">
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <i class="cc BTC m-r-10 f-s-40" title="BTC"></i>
-
-                                                <div class="notification-contnet">
-                                                    <h5>All Transaction BTC</h5> <span class="mail-desc">Just see the my
-                                                        new admin!</span>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <i class="cc LTC m-r-10 f-s-40" title="BTC"></i>
-                                                <div class="notification-contnet">
-                                                    <h5>This is LTC coin</h5> <span class="mail-desc">Just a reminder
-                                                        that you have event</span>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <i class="cc DASH m-r-10 f-s-40" title="BTC"></i>
-                                                <div class="notification-contnet">
-                                                    <h5>This is DASH coin</h5> <span class="mail-desc">You can customize
-                                                        this template as you want</span>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="#">
-                                                <i class="cc XRP m-r-10 f-s-40" title="BTC"></i>
-                                                <div class="notification-contnet">
-                                                    <h5>This is LTC coin</h5> <span class="mail-desc">Just see the my
-                                                        admin!</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link text-center" href="javascript:void(0);"> Check all
-                                            notifications <i class="fa fa-angle-right"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                     
                         <!-- End Comment -->
                         <!-- Messages -->
 
@@ -182,7 +116,7 @@
                 <div>
                     <div class="row">
                         <div class="col-md-12 col-lg-12">
-                            <div class="p-20">
+                            <div class="p-10">
                                 <div class="card-body">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs" role="tablist">
@@ -193,12 +127,12 @@
                                         <li class="nav-item"> <a style="color:black" class="nav-link" data-toggle="tab"
                                                 href="#profile" role="tab"><span class="hidden-sm-up"><i
                                                         class="ti-user"></i></span> <span
-                                                    class="hidden-xs-down">Partner</span></a> </li>
+                                                    class="hidden-xs-down">Discounts</span></a> </li>
                                     </ul>
                                     <!-- Tab panes -->
                                     <div class="tab-content tabcontent-border">
                                         <div class="tab-pane active" id="home" role="tabpanel">
-                                            <div class="p-21">
+                                            <div class="p-10">
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="card p-30">
@@ -344,7 +278,7 @@
 
 
                                                 <div class="row">
-                                                    <div class="col-lg-12">
+                                                    <div class="col-lg-12 p-0">
                                                         <div class="card">
                                                             <div class="card-title">
                                                                 <h4>My Entries</h4>
@@ -414,7 +348,7 @@
 
                                                 </div>
 
-                                                <div class="row p-20">
+                                                <div class="row p-10">
                                                     <div class="card-body">
                                                         <div class="col-lg-12 card">
                                                             <div class="card-body">
@@ -484,7 +418,7 @@
                                                                                             <td style="color: #EBCE98;">
                                                                                                 <b> Mintues</b>
                                                                                             </td>
-                                                                                            <td style="color: #EBCE98;">
+                                                                                            <td class="d-none d-lg-block" style="color: #EBCE98;">
                                                                                                 <b> Seconds</b>
                                                                                             </td>
                                                                                         </tr>
@@ -501,7 +435,7 @@
                                                                                                 style="text-align: center;">
                                                                                                 0
                                                                                             </td>
-                                                                                            <td id="sec"
+                                                                                            <td class="d-none d-lg-block" id="sec"
                                                                                                 style="text-align: center;">
                                                                                                 0
                                                                                             </td>
@@ -524,10 +458,82 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane  p-21" id="profile" role="tabpanel">
-
+                                        <div class="tab-pane p-10" id="profile" role="tabpanel">
+                                            <!-- Coupon Gen -->
+                                            <style>
+                                                /* body{
+                                                    overflow: hidden;
+                                                } */
+                                                #photo {
+                                                    width: 450px;
+                                                    height: 270px;
+                                                    display: block;
+                                                    position: absolute;
+                                                    top: -100%;
+                                            
+                                                }
+                                            
+                                                .card-img-top {
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    width: 120px
+                                                }
+                                            
+                                                .coupon.card {
+                                                    border-radius: 0;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    padding: 30px;
+                                            
+                                                }
+                                            
+                                                #mcanvas {
+                                                    display: none;
+                                            
+                                                }
+                                            </style>
+                                            <div>
+                                                <script>
+                                                    function download_cupon() {
+                                                        let div = document.getElementById('photo');
+                                            
+                                                        html2canvas(div, {
+                                                            allowTaint: true
+                                                        }).then(
+                                                            function (canvas) {
+                                                                document.getElementById('output').appendChild(canvas).setAttribute("id", "mcanvas");
+                                                                var mcanvas = document.getElementById("mcanvas");
+                                                                image = mcanvas.toDataURL("image/jpg").replace("image/jpg", 1.0, "image/octet-stream");
+                                                                var link = document.createElement('a');
+                                                                link.download = "cupon.png";
+                                                                link.href = image;
+                                                                link.click();
+                                            
+                                            
+                                                            });
+                                            
+                                            
+                                                    }
+                                                
+                                            
+                                                </script>
+                                                <div id="photo">
+                                                    <div class="coupon card">
+                                                        <img class="card-img-top text-center" src="partner/image026.png" alt="Card image cap">
+                                                        <div class="card-body">
+                                                            <h3 class="card-title">Coupon Name</h3>
+                                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                                                card's
+                                                                content.</p>
+                                                        </div>
+                                            
+                                                    </div>
+                                                </div>
+                                                <div id="output"></div>
+                                            </div>
+                                            <!-- Coupon Gen End -->
                                             <div class="row">
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-12 p-0">
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <h4 class="card-title">PARTNER DISCOUNTS PORTAL</h4>
@@ -666,12 +672,14 @@
 
 
                                                                                 <!-- Button trigger modal -->
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                                <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
+                                                                                <!--<button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button> -->
                                                                             </td>
 
                                                                         </tr>
@@ -706,12 +714,10 @@
                                                                                 wide range of premium brands.
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
 
@@ -753,12 +759,10 @@
                                                                                 <br> to connect with others."
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
 
@@ -829,12 +833,10 @@
                                                                                 Programming-Only & Non-Coaching."
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -881,12 +883,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -930,12 +930,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -975,12 +973,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
 
@@ -1035,12 +1031,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -1082,12 +1076,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -1124,12 +1116,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -1168,12 +1158,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -1214,12 +1202,10 @@
 
                                                                             </td>
                                                                             <td>
-                                                                                <a class="btn btn-primary btn-sm"
-                                                                                    type="button" data-toggle="modal"
-                                                                                    href="javascript:void(0)"
-                                                                                    data-target="#exampleModalCenter"
-                                                                                    role="button"> <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i></a>
+                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <i
+                                                                                        class="bi bi-file-earmark-arrow-down"></i>
+                                                                                </button>
                                                                             </td>
                                                                         </tr>
 
@@ -1245,7 +1231,7 @@
 
 
                                         </div>
-                                        <div class="tab-pane p-21" id="messages" role="tabpanel">3</div>
+                                        <div class="tab-pane p-10" id="messages" role="tabpanel">3</div>
                                     </div>
                                 </div>
                             </div>

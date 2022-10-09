@@ -11,11 +11,16 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        overflow: hidden;
+    }
     #photo {
-        width: 500px;
+        width: 400px;
         height: 300px;
-        margin: 30px;
+        /* margin: 30px; */
         display: block;
+        position: absolute;
+        top: -100%;
 
     }
 
@@ -34,11 +39,16 @@
     }
 
     #mcanvas {
-        display: none;
+        /* display: none; */
+
+        width: 100%;
+        height: auto;
+        padding: 20px;
+
     }
 </style>
 
-<body>
+<body">
     <div id="photo">
         <div class="card">
             <img class="card-img-top text-center" src="partner/image026.png" alt="Card image cap">
@@ -51,14 +61,16 @@
 
         </div>
     </div>
+    <div id="output"></div>
     <div class="container row">
-        <div class="col">
-            <button class="btn btn-primary" onclick="download_cupon()">
+        <div class="col text-center m-10 p-10">
+            <button class="btn btn-primary p-10" onclick="download_cupon()">
                 Download Cupon
             </button>
+            <p>Your Download will start shortly....</p>
         </div>
     </div>
-    <div id="output"></div>
+    
     <script>
         function download_cupon() {
             let div = document.getElementById('photo');
@@ -80,6 +92,28 @@
 
 
         }
+        // function download_cupon() {
+        //     let div = document.getElementById('photo');
+
+        //     html2canvas(div, {
+        //         allowTaint: true
+        //     }).then(
+        //         function (canvas) {
+        //             document.getElementById('output').appendChild(canvas).setAttribute("id", "mcanvas");
+        //             var mcanvas = document.getElementById("mcanvas");
+        //             image = mcanvas.toDataURL("image/jpg").replace("image/jpg", 1.0, "image/octet-stream");
+        //             var link = document.createElement('a');
+        //             link.download = "cupon.png";
+        //             link.href = image;
+        //             link.click();
+
+
+        //         });
+
+
+        // }
+
+
         function download_image() {
             var canvas = document.getElementById("mcanvas");
             image = canvas.toDataURL("image/jpg").replace("image/jpg", 1.0, "image/octet-stream");
