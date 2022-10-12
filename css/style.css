@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url(fonts/Copperplate/stylesheet.css);
 @import url(fonts/Avenir/stylesheet.css);
 @import url(../icons/font-awesome/css/font-awesome.min.css);
@@ -7509,3 +7510,154 @@ font-size: 16px;
 
     background:#000000 !important;
 }
+
+/* Price Table Stylings  */
+   /* Variables */
+   :root {
+    --bronze-m: #ffcb6f;
+    --silver-m: #b7b7b7;
+    --gold-m: #dba545;
+    --diamond-m: #7cbcf3;
+}
+/* color configs */
+/* BRONZE */
+.bronze.price-card {
+    border-color: var(--bronze-m) !important;
+}
+
+.bronze.price-card .btn-price {               
+    background-color: var(--bronze-m) !important;
+    
+}
+
+.bronze.price-card .price-tag {
+    background-color:var(--bronze-m) ;
+   
+}
+
+.bronze.price-card .price-b {
+    color: var(--bronze-m) !important;
+}
+ /* BRONZE */
+/* SILVER */
+.silver.price-card {
+    border-color: var(--silver-m) !important;
+}
+
+.silver.price-card .btn-price {               
+    background-color: var(--silver-m) !important;
+    
+}
+
+.silver.price-card .price-tag {
+    background-color:var(--silver-m) ;
+   
+}
+
+.silver.price-card .price-b {
+    color: var(--silver-m) !important;
+}
+ /* SILVER */
+/* GOLD */
+.gold.price-card {
+    border-color: var(--gold-m) !important;
+}
+
+.gold.price-card .btn-price {               
+    background-color: var(--gold-m) !important;
+    
+}
+
+.gold.price-card .price-tag {
+    background-color:var(--gold-m);
+   
+}
+
+.gold.price-card .price-b {
+    color: var(--gold-m) !important;
+}
+ /* GOLD */
+/* DIAMOND */
+.diamond.price-card {
+    border-color: var(--diamond-m) !important;
+}
+
+.diamond.price-card .btn-price {               
+    background-color: var(--diamond-m) !important;
+    
+}
+
+.diamond.price-card .price-tag {
+    background-color:var(--diamond-m);
+   
+}
+
+.diamond.price-card .price-b {
+    color: var(--diamond-m) !important;
+}
+ /* BDIAMOND */
+
+/* Card Base Styling  */
+.prices.row {
+    padding: 10px 80px;
+}
+
+.price-card {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.price-card .btn-price {
+    width: 100%;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    padding: 15px 50px 15px 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.price-card .price-tag {
+    background-color: black;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.price-card .price-name {
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 32px;
+}
+
+.price-card .price-name span {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.price-card .price-b {
+    font-weight: bold;
+    font-size: 64px;
+    padding: 30px 0;
+}
+
+.price-card .price-features {
+    padding: 10px 35px;
+    color: black;
+}
+
+.price-card .price-features li {
+    padding-left: 10px;
+    list-style-type: "✓" !important;
+}
+@media (max-width : 480px) {
+    .prices.row {
+        padding: 10px 10px;
+    }
+}
+/* Card Base Styling  */
+/* Price Table Stylings  End */
