@@ -6,41 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 
     <title>Document</title>
 </head>
 <style>
-    body{
+    body {
         overflow: hidden;
     }
+
     #photo {
-        width: 400px;
+        width: 500px;
         height: 300px;
+
         /* margin: 30px; */
-        display: block;
+        /* display: block;
         position: absolute;
-        top: -100%;
+        top: -100%; */
 
     }
 
-    .card-img-top {
+    .c_partner_logo {
         justify-content: center;
         align-items: center;
-        width: 120px
+        width: 165px
     }
 
-    .card {
+    .coupon {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(images/cupontemplate.jpg);
         border-radius: 0;
         height: 100%;
         width: 100%;
-        padding: 30px;
+        padding: 20px 5px 5px 70px;
+        margin: 0;
+    }
 
+    .coupon .c_name {
+        margin: 10px 0px;
+        color: white;
+        font-family: copperplate_ccregular;
+    }
+
+    .coupon .c_discount-number {
+        margin: 10px 0px;
+        font-size: 42px;
+        color: #d9a542;
+        font-family: copperplate_ccregular;
+    }
+
+    .c_text {
+        font-family: avenir_next_lt_proregular;
+        font-size: 18px;
     }
 
     #mcanvas {
         /* display: none; */
-
         width: 100%;
         height: auto;
         padding: 20px;
@@ -48,20 +72,27 @@
     }
 </style>
 
-<body">
-    <div id="photo">
-        <div class="card">
-            <img class="card-img-top text-center" src="partner/image026.png" alt="Card image cap">
-            <div class="card-body">
-                <h3 class="card-title">Coupon Name</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-            </div>
+<body>
 
+    <!-- Coupon/ Capture Canvas -->
+    <div id="photo">
+        <div id="capture" class="align-middle text-white row coupon">
+            <!-- Partner Logo  -->
+            <div class="col-12 "><img class="c_partner_logo" src="partner/image021.png" alt="Card image cap">
+                <!-- User Name on Coupon -->
+                <h2 class="c_name">RAJA TAYYAB</h2>
+                <!-- Discount Percentage -->
+                <h1 class="c_discount-number">25% Off</h1>
+                <!-- Discount Description -->
+                <p class="c_text"> VR and online escape rooms </p>
+            </div>
         </div>
     </div>
+    <!-- Coupon/ Capture Canvas End-->
+    <!-- Canvas Output -->
     <div id="output"></div>
+    <!-- Canvas Output End-->
+
     <div class="container row">
         <div class="col text-center m-10 p-10">
             <button class="btn btn-primary p-10" onclick="download_cupon()">
@@ -70,10 +101,10 @@
             <p>Your Download will start shortly....</p>
         </div>
     </div>
-    
+
     <script>
         function download_cupon() {
-            let div = document.getElementById('photo');
+            let div = document.getElementById('capture');
 
             html2canvas(div, {
                 allowTaint: true

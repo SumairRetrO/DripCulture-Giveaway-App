@@ -21,7 +21,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+    <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
     <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/helper.css" rel="stylesheet">
@@ -63,7 +63,7 @@
                     <!-- User profile and search -->
                     <ul class="navbar-nav my-lg-0">
                         <!-- Comment -->
-                     
+
                         <!-- End Comment -->
                         <!-- Messages -->
 
@@ -198,16 +198,82 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
-
-
-
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <div class="card">
-                                                            <div class="card-body">
-                                                                <h4 class="card-title">Order Summary</h4>
+                                                            <div class="card-body pt-3 align-middle row">
+                                                                <div class="col-6"><h4 class="card-title">Order Summary</h4></div>
+                                                                <div class="col-6 text-right"><!-- Button trigger modal -->
+                                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                                        Upgrade
+                                                                    </button>
+                                                                    
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                                                        aria-hidden="true">
+                                                                        <div class="modal-dialog rounded modal-lg" role="document">
+                                                                            <div class="modal-content">
+                                                                                <div class="p-18 row">
+                                                                                    <div class="col-6 ">
+                                                                                        <h2 class="modal-title text-left" id="exampleModalLabel">Membership Upgrade</h2>
+                                                                                    </div>
+                                                                                    <div class="col-6 text-right"><button type="button"
+                                                                                            class=" btn btn-sm rounded-circle btn-primary rounded" data-dismiss="modal" aria-label="Close">
+                                                                                            <span aria-hidden="true">&times;</span>
+                                                                                        </button></div>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <div class="row">
+                                                                                        <div class="col-4 ">
+                                                                                            <div class="card text-center">
+                                                                                                <div class="card-body p-5">
+                                                                                                    <h1 class="sub-price">19.99$</h1>
+                                                                                                    <h2 class="sub-name">Standard</h2>
+                                                                                                    <p class="card-text">30 Entries Per Month
+                                                                                                    </p>
+                                                                                                    <a class="btn btn-warning btn-md " href="#" role="button">UPGRADE</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-4 ">
+                                                                                            <div class="card text-center">
+                                                                                                <div class="card-body p-5">
+                                                                                                    <h1 class="sub-price">49.99$</h1>
+                                                                                                    <h2 class="sub-name">Elite</h2>
+                                                                                                    <p class="card-text">30 Entries Per Month
+                                                                                                    </p>
+                                                                                                    <a class="btn btn-warning btn-md " href="#" role="button">UPGRADE</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-4 ">
+                                                                                            <div class="card text-center">
+                                                                                                <div class="card-body p-5">
+                                                                                                    <h1 class="sub-price">99.99$</h1>
+                                                                                                    <h2 class="sub-name">Premium</h2>
+                                                                                                    <p class="card-text">30 Entries Per Month
+                                                                                                    </p>
+                                                                                                    <a class="btn btn-warning btn-md " href="#" role="button">UPGRADE</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <style>
+                                                                        .sub-price {
+                                                                            font-family: copperplate_ccregular;
+                                                                        }
+                                                                    
+                                                                        .sub-name {
+                                                                            font-family: copperplate_ccregular;
+                                                                        }
+                                                                    </style></div>
+                                                                
 
                                                                 <div class="table-responsive m-t-40">
                                                                     <table id="myTable" class="table  ">
@@ -216,7 +282,7 @@
                                                                                 <th>Order Number</th>
                                                                                 <th>Package </th>
                                                                                 <th>Start Date </th>
-                                                                                <th>End Date </th>
+                                                                             
                                                                                 <th>Membership Status</th>
                                                                                 <th>Next Bill </th>
                                                                             </tr>
@@ -229,7 +295,7 @@
                                                                                         Premium
                                                                                     </span>
                                                                                 </td>
-                                                                                <td>12-09-2022</td>
+                                                                            
                                                                                 <td>12-10-2022</td>
                                                                                 <td> <span
                                                                                         class="badge badge-success">Active
@@ -244,7 +310,7 @@
                                                                                         Elite
                                                                                     </span>
                                                                                 </td>
-                                                                                <td>12-09-2022</td>
+                                                                            
                                                                                 <td>12-10-2022</td>
                                                                                 <td> <span
                                                                                         class="badge badge-danger">Expired
@@ -260,7 +326,7 @@
                                                                                         Standard
                                                                                     </span>
                                                                                 </td>
-                                                                                <td>12-09-2022</td>
+                                                                            
                                                                                 <td>12-10-2022</td>
                                                                                 <td> <span
                                                                                         class="badge badge-success">Active
@@ -289,23 +355,24 @@
                                                                         <div id="np-Pie" style="height: 370px"></div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-6">
-                                                                    <table style="width:100%">
+                                                                <div
+                                                                    class="col-sm-6 align-middle justify-content-center">
+                                                                    <table style="margin-top: 30px; width:100%">
                                                                         <tr>
                                                                             <td>
                                                                                 <h1 class="card-title text-center">
                                                                                     Number of one off entries
                                                                                     <br> <br>
-                                                                                    <span style="font-size: 28px;"
+                                                                                    <span style="font-size: 32px;"
                                                                                         class="text-primary">
                                                                                         <b>2</b></span>
                                                                                 </h1>
                                                                             </td>
                                                                             <td>
                                                                                 <h1 class="card-title text-center">
-                                                                                    Number of one off entries
+                                                                                    Number of Monthly Entries
                                                                                     <br> <br>
-                                                                                    <span style="font-size: 28px;"
+                                                                                    <span style="font-size: 32px;"
                                                                                         class="text-primary">
                                                                                         <b>5</b></span>
                                                                                 </h1>
@@ -319,25 +386,15 @@
                                                                         <tr>
                                                                             <td>
                                                                                 <h1 class="card-title text-center">
-                                                                                    Number of one off entries
+                                                                                    Number of Total Entries
                                                                                     <br> <br>
-                                                                                    <span style="font-size: 28px;"
+                                                                                    <span style="font-size: 50px;"
                                                                                         class="text-primary">
                                                                                         <b>1</b></span>
                                                                                 </h1>
                                                                             </td>
-                                                                            <td>
-                                                                                <h1 class="card-title text-center">
-                                                                                    Number of one off entries
-                                                                                    <br> <br>
-                                                                                    <span style="font-size: 28px;"
-                                                                                        class="text-primary">
-                                                                                        <b>15</b></span>
-                                                                                </h1>
-                                                                            </td>
+
                                                                         </tr>
-
-
                                                                     </table>
                                                                 </div>
                                                             </div>
@@ -418,7 +475,8 @@
                                                                                             <td style="color: #EBCE98;">
                                                                                                 <b> Mintues</b>
                                                                                             </td>
-                                                                                            <td class="d-none d-lg-block" style="color: #EBCE98;">
+                                                                                            <td class="d-none d-lg-block"
+                                                                                                style="color: #EBCE98;">
                                                                                                 <b> Seconds</b>
                                                                                             </td>
                                                                                         </tr>
@@ -435,7 +493,8 @@
                                                                                                 style="text-align: center;">
                                                                                                 0
                                                                                             </td>
-                                                                                            <td class="d-none d-lg-block" id="sec"
+                                                                                            <td class="d-none d-lg-block"
+                                                                                                id="sec"
                                                                                                 style="text-align: center;">
                                                                                                 0
                                                                                             </td>
@@ -460,43 +519,86 @@
                                         </div>
                                         <div class="tab-pane p-10" id="profile" role="tabpanel">
                                             <!-- Coupon Gen -->
-                                            <style>
-                                                /* body{
-                                                    overflow: hidden;
-                                                } */
+                                            <style>                                          
                                                 #photo {
-                                                    width: 450px;
-                                                    height: 270px;
+                                                    width: 500px;
+                                                    height: 300px;
+                                                    /* margin: 30px; */
                                                     display: block;
                                                     position: absolute;
                                                     top: -100%;
-                                            
+
                                                 }
-                                            
-                                                .card-img-top {
+
+                                                .c_partner_logo {
                                                     justify-content: center;
                                                     align-items: center;
-                                                    width: 120px
+                                                    width: 165px
                                                 }
-                                            
-                                                .coupon.card {
+
+                                                .coupon {
+                                                    background-repeat: no-repeat;
+                                                    background-position: center;
+                                                    background-size: cover;
+                                                    background-image: url(images/cupontemplate.jpg);
                                                     border-radius: 0;
                                                     height: 100%;
                                                     width: 100%;
-                                                    padding: 30px;
-                                            
+                                                    padding: 20px 5px 5px 70px;
+                                                    margin: 0;
                                                 }
-                                            
+
+                                                .coupon .c_name {
+                                                    margin: 10px 0px;
+                                                    color: white;
+                                                    font-family: copperplate_ccregular;
+                                                }
+
+                                                .coupon .c_discount-number {
+                                                    margin: 10px 0px;
+                                                    font-size: 42px;
+                                                    color: #d9a542;
+                                                    font-family: copperplate_ccregular;
+                                                }
+
+                                                .c_text {
+                                                    font-family: avenir_next_lt_proregular;
+                                                    font-size: 18px;
+                                                }
+
                                                 #mcanvas {
                                                     display: none;
-                                            
                                                 }
                                             </style>
-                                            <div>
+
+                                          
+
+                                                <!-- Coupon/ Capture Canvas -->
+                                                <div id="photo">
+                                                    <div id="capture" class="align-middle text-white row coupon">
+                                                        <!-- Partner Logo  -->
+                                                        <div class="col-12 "><img class="c_partner_logo"
+                                                                src="partner/image021.png" alt="Card image cap">
+                                                            <!-- User Name on Coupon -->
+                                                            <h2 class="c_name">RAJA TAYYAB</h2>
+                                                            <!-- Discount Percentage -->
+                                                            <h1 class="c_discount-number">25% Off</h1>
+                                                            <!-- Discount Description -->
+                                                            <p class="c_text"> VR and online escape rooms </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Coupon/ Capture Canvas End-->
+                                                <!-- Canvas Output -->
+                                                <div id="output"></div>
+                                                <!-- Canvas Output End-->
+
+                                                <!-- Coupon Gen Script -->
+
                                                 <script>
                                                     function download_cupon() {
-                                                        let div = document.getElementById('photo');
-                                            
+                                                        let div = document.getElementById('capture');
+
                                                         html2canvas(div, {
                                                             allowTaint: true
                                                         }).then(
@@ -508,725 +610,737 @@
                                                                 link.download = "cupon.png";
                                                                 link.href = image;
                                                                 link.click();
-                                            
-                                            
+
+
                                                             });
-                                            
-                                            
+
+
                                                     }
-                                                
-                                            
                                                 </script>
-                                                <div id="photo">
-                                                    <div class="coupon card">
-                                                        <img class="card-img-top text-center" src="partner/image026.png" alt="Card image cap">
-                                                        <div class="card-body">
-                                                            <h3 class="card-title">Coupon Name</h3>
-                                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                                                card's
-                                                                content.</p>
-                                                        </div>
-                                            
-                                                    </div>
-                                                </div>
-                                                <div id="output"></div>
-                                            </div>
-                                            <!-- Coupon Gen End -->
-                                            <div class="row">
-                                                <div class="col-sm-12 p-0">
-                                                    <div class="card">
-                                                        <div class="card-body">
-                                                            <h4 class="card-title">PARTNER DISCOUNTS PORTAL</h4>
-                                                            <h6 class="card-subtitle">Information Guide</h6>
-                                                            <div class="table-responsive m-t-40">
-                                                                <!-- Modal -->
 
-                                                                <div class="modal fade" id="exampleModalCenter"
-                                                                    tabindex="-1" role="dialog"
-                                                                    aria-labelledby="exampleModalCenterTitle"
-                                                                    aria-hidden="true">
-                                                                    <div class="modal-dialog coupon-modal modal-dialog-centered"
-                                                                        role="document">
-                                                                        <div class="modal-content">
-                                                                            <div class="modal-header">
-                                                                                <h5 class="modal-title"
-                                                                                    id="exampleModalLongTitle">
-                                                                                    Coupon </h5>
-                                                                                    
-                                                                                <button type="button" class="close"
-                                                                                    data-dismiss="modal"
-                                                                                    aria-label="Close">
-                                                                                    <span
-                                                                                        aria-hidden="true">&times;</span>
-                                                                                </button>
-                                                                            </div>
-                                                                            <div class="modal-body">
-                                                                                <iframe src="coupon_gen.html"
-                                                                                    height="400px" width="100%"
-                                                                                    frameborder="0"></iframe>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                <!-- Coupon Gen Script End-->
 
-                                                                </div>
+                                                <!-- Coupon Gen End -->
+                                                <div class="row">
+                                                    <div class="col-sm-12 p-0">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h4 class="card-title">PARTNER DISCOUNTS PORTAL</h4>
+                                                                <h6 class="card-subtitle">Information Guide</h6>
+                                                                <div class="table-responsive m-t-40">
+                                                                    <table id="myTable" class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Name of Partner</th>
+                                                                                <th>Company Logo </th>
+                                                                                <th>Contact details </th>
+                                                                                <th>Discount </th>
+                                                                                <th
+                                                                                    style=" text-align: left !important;">
+                                                                                    Description</th>
 
-                                                                <style>
-                                                                    .coupon-modal {
-                                                                        min-width: 35% !important;
-                                                                    }
-                                                                </style>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Entermission</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/entermission-300x129.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Sydney <br />
+                                                                                    Website: enterthemission.com<br>
+                                                                                    Address: Level 1, 484 Kent Street,
+                                                                                    Sydney NSW 2000
+                                                                                    <br>Email:
+                                                                                    sydney@enterthemission.com.au, <br>
+                                                                                    Phone: (02) 9267 3873<br> Melbourne
+                                                                                    <br>
+                                                                                    Website:
+                                                                                    enterthemission.com/melbourne
+                                                                                    <br>
+                                                                                    Address:Level 1, 164 Bourke Street,
+                                                                                    <br>
+                                                                                    Melbourne VIC 3000 (near
+                                                                                    intersection
+                                                                                    <br>with Russell St
 
-                                                                <!-- Modal End-->
-                                                                <table id="myTable" class="table  ">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Name of Partner</th>
-                                                                            <th>Company Logo </th>
-                                                                            <th>Contact details </th>
-                                                                            <th>Discount </th>
-                                                                            <th style=" text-align: left !important;">
-                                                                                Description</th>
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
 
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Entermission</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/entermission-300x129.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Sydney <br />
-                                                                                Website: enterthemission.com<br>
-                                                                                Address: Level 1, 484 Kent Street,
-                                                                                Sydney NSW 2000
-                                                                                <br>Email:
-                                                                                sydney@enterthemission.com.au, <br>
-                                                                                Phone: (02) 9267 3873<br> Melbourne <br>
-                                                                                Website: enterthemission.com/melbourne
-                                                                                <br>
-                                                                                Address:Level 1, 164 Bourke Street, <br>
-                                                                                Melbourne VIC 3000 (near intersection
-                                                                                <br>with Russell St
+                                                                                    10% off VR and online escape rooms
+                                                                                    <br>
 
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
+                                                                                    How to redeem : <br>
+                                                                                    In-store: Present your current <br>
+                                                                                    membership card to redeem discounts.
+                                                                                    <br>
+                                                                                    Online: Use code at checkout DRIP10
 
-                                                                                10% off VR and online escape rooms <br>
+                                                                                </td>
 
-                                                                                How to redeem : <br>
-                                                                                In-store: Present your current <br>
-                                                                                membership card to redeem discounts.
-                                                                                <br>
-                                                                                Online: Use code at checkout DRIP10
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
 
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                Entermission is one of the most popular
-                                                                                <br> activitiesSydney and Melbourne, and
-                                                                                a
-                                                                                <br> Travellers’ Choice Award Winner.
-                                                                                It’s also Sydney and <br> Melbourne’s
-                                                                                only virtual reality escape <br>rooms
-                                                                                ‍with real-life SPECIAL EFFECTS!
-                                                                                <br /> <br />
-                                                                                <ul
-                                                                                    style="list-style-type: circle !important;">
-                                                                                    <li
+                                                                                    Entermission is one of the most
+                                                                                    popular
+                                                                                    <br> activitiesSydney and Melbourne,
+                                                                                    and
+                                                                                    a
+                                                                                    <br> Travellers’ Choice Award
+                                                                                    Winner.
+                                                                                    It’s also Sydney and <br>
+                                                                                    Melbourne’s
+                                                                                    only virtual reality escape
+                                                                                    <br>rooms
+                                                                                    ‍with real-life SPECIAL EFFECTS!
+                                                                                    <br /> <br />
+                                                                                    <ul
                                                                                         style="list-style-type: circle !important;">
-                                                                                        Journey into Alice’s Wonderland
-                                                                                        or outer <br> space see exotic
-                                                                                        animals in the sky jungle <br>
-                                                                                        or other fantastical worlds.
-                                                                                    </li>
-                                                                                    <li
-                                                                                        style="list-style-type: circle !important;">
-                                                                                        See, hear and interact as a team
-                                                                                        to find <br> clues and solve
-                                                                                        puzzles to complete your <br>
-                                                                                        mission and have FUN .
-                                                                                    </li>
-                                                                                    <li
-                                                                                        style="list-style-type: circle !important;">
-                                                                                        Fly through space, shoot lasers,
-                                                                                        defeat<br> the Queen of Hearts
-                                                                                        or perform <br> other amazing
-                                                                                        feats.
-                                                                                    </li>
-                                                                                    <li
-                                                                                        style="list-style-type: circle !important;">
-                                                                                        Special effects making the
-                                                                                        action feel <br>REAL – smell
-                                                                                        gunpowder and smoke, <br> feel
-                                                                                        br
-                                                                                        wind on your face.
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </td>
-                                                                            <td>
+                                                                                        <li
+                                                                                            style="list-style-type: circle !important;">
+                                                                                            Journey into Alice’s
+                                                                                            Wonderland
+                                                                                            or outer <br> space see
+                                                                                            exotic
+                                                                                            animals in the sky jungle
+                                                                                            <br>
+                                                                                            or other fantastical worlds.
+                                                                                        </li>
+                                                                                        <li
+                                                                                            style="list-style-type: circle !important;">
+                                                                                            See, hear and interact as a
+                                                                                            team
+                                                                                            to find <br> clues and solve
+                                                                                            puzzles to complete your
+                                                                                            <br>
+                                                                                            mission and have FUN .
+                                                                                        </li>
+                                                                                        <li
+                                                                                            style="list-style-type: circle !important;">
+                                                                                            Fly through space, shoot
+                                                                                            lasers,
+                                                                                            defeat<br> the Queen of
+                                                                                            Hearts
+                                                                                            or perform <br> other
+                                                                                            amazing
+                                                                                            feats.
+                                                                                        </li>
+                                                                                        <li
+                                                                                            style="list-style-type: circle !important;">
+                                                                                            Special effects making the
+                                                                                            action feel <br>REAL – smell
+                                                                                            gunpowder and smoke, <br>
+                                                                                            feel
+                                                                                            br
+                                                                                            wind on your face.
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                                <td>
 
 
-                                                                                <!-- Button trigger modal -->
-                                                                                <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                                <!--<button class="btn btn-primary p-10" onclick="download_cupon()">
+                                                                                    <!-- Button trigger modal -->
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                    <!--<button class="btn btn-primary p-10" onclick="download_cupon()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button> -->
-                                                                            </td>
-
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td>Bikerr</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/bikerr-300x120.jpeg"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Website: www.bikerr.com.au <br>
-                                                                                IG: @bikerr_aus <br>
-                                                                                Email: info@bikerr.com.au
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                5% off & free shipping on most brands
-                                                                                <br>(exceptions: R&G, Evantech,
-                                                                                Hoglights)
-                                                                                <br>
-                                                                                How to redeem : <br>
-                                                                                use code at checkout: DRIP2021
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                An Australian owned and run online <br>
-                                                                                store for motorcycle parts from <br> a
-                                                                                wide range of premium brands.
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-
-
-                                                                        <tr>
-                                                                            <td>Swanky Array</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/swanky-array-300x208.jpeg"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Website: www.bikerr.com.au <br>
-                                                                                IG: @bikerr_aus <br>
-                                                                                Email: info@bikerr.com.au
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                5% off & free shipping on most brands
-                                                                                <br>(exceptions: R&G, Evantech,
-                                                                                Hoglights)
-                                                                                <br>
-                                                                                How to redeem : <br>
-                                                                                use code at checkout: DRIP2021
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                "Swanky Array was started in 2019 as
-                                                                                <br> a platform geared towards
-                                                                                connecting <br> the intrinsically linked
-                                                                                music and art.
-                                                                                <br>
-                                                                                Swanky Array connects with local <br>
-                                                                                artists and provides a space for our
-                                                                                <br> community to relax and enjoy good
-                                                                                <br> music while also offering space
-                                                                                <br> to connect with others."
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-
-
-                                                                        <tr>
-                                                                            <td>Adonis Athletics</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/image7.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                "Website: www.adonisathletics.com.au
-                                                                                <br><br>
-                                                                                Paddington <br>
-                                                                                385 Oxford Street, Paddington NSW 2021
-                                                                                <br>
-                                                                                IG: @adonisathleticspaddington <br>
-                                                                                Phone: 0431 691 934 <br>
-
-                                                                                Castle Hill <br>
-                                                                                Unit 16/8 Victoria Avenue, Castle Hill
-                                                                                NSW 2154 <br>
-                                                                                IG: @adonisathleticscastlehill <br>
-                                                                                (m): 0431 691 934 <br>
-                                                                                <br>
-                                                                                Granville <br>
-                                                                                Unit 13/40-44 Wellington Road, <br>
-                                                                                South Granville NSW 2142 <br>
-                                                                                IG: @adonisathleticsgranville <br>
-                                                                                (m): 0431 691 934"
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                10% off apparel and protein powder <br>
-                                                                                10% off 1 – 3 month memberships <br>
-                                                                                30% off 4, 8 and 12 month memberships
-                                                                                <br>
-                                                                                How to redeem : <br>
-                                                                                Present your current membership <br>
-                                                                                card to redeem discounts in-store
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-
-                                                                                "World-class strength and conditioning
-                                                                                <br>
-                                                                                facilities and a gym culture you simply
-                                                                                <br>
-                                                                                won’t find anywhere else! Adonis
-                                                                                Athletics <br>
-                                                                                members are among some of the world’s
-                                                                                <br>
-                                                                                strongest competitors. Featured on Men’s
-                                                                                <br>
-                                                                                Health as one of the best Powerlifting
-                                                                                gyms <br>
-                                                                                in Sydney, there is no better place to
-                                                                                <br>
-                                                                                improve your physical health and
-                                                                                surround <br>
-                                                                                yourself with a supportive community.
-                                                                                <br>
-                                                                                Pick your membership:
-                                                                                <br>
-                                                                                Full Coaching, Online Coaching, <br>
-                                                                                Programming-Only & Non-Coaching."
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>EK Automotive</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/image3-768x181.jpeg"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Baulkham Hills 308 Windsor Road,
-                                                                                Baulkham Hills NSW 2153 <br>
-                                                                                Phone: (02) 9011 7330<br>
-                                                                                IG: @ekautomotive_baulkhamhills<br>
-                                                                                Gladesville Unit 1C/28 Buffalo Road,
-                                                                                Gladesville NSW 2111<br>
-                                                                                Phone: (02) 9809 3013<br>
-                                                                                IG: @ek_automotive_gladesville
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                Free service (not including parts and
-                                                                                oil)<br>
-                                                                                Free wheel alignment<br>
-                                                                                Free Pink Slip<br>
-                                                                                Gladesville<br>
-                                                                                Free service (not including parts and
-                                                                                oil)<br>
-                                                                                25% off ECU tune<br>
-                                                                                How to redeem :<br>
-                                                                                Present your current membership card to
-                                                                                redeem discounts in-store
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                Local automotive mechanics with over
-                                                                                30<br>
-                                                                                years’ experience servicing all
-                                                                                makes<br>
-                                                                                and models!
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Iimaje</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/image021.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                IG: @iimajeofficial<br>
-                                                                                Email: iimajeclothing@gmail.com<br>
-                                                                                Hurstville<br>
-                                                                                Hurstville Westfield The Avenue,
-                                                                                Hurstville NSW 2220 2000<br>
-                                                                                Liverpool<br>
-                                                                                Liverpool Westfield Macquarie St,
-                                                                                Liverpool NSW 2170
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                15% off<br>
-
-                                                                                How to redeem :<br>
-                                                                                Present your current membership card
-                                                                                to<br>
-                                                                                redeem discounts in-store.
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                Get the latest in season clothing for
-                                                                                an<br>
-                                                                                exclusive discount! Pay less, get
-                                                                                more…<br>
-                                                                                It’s that simple when you’re a member
-                                                                                of<br>
-                                                                                Drip Culture.
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Dilvin</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/dilvin-300x150.jpeg"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Website: dilvinaustralia.com<br>
-                                                                                Email: info@dilvinaustralia.com<br>
-                                                                                IG: @dilvinaustralia
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                15% off<br>
-
-                                                                                How to redeem :<br>
-                                                                                Use code at checkout: dripculture15
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                Ladies… here is your opportunity to<br>
-                                                                                catch a bargain on the latest
-                                                                                fashion<br>
-                                                                                wear.<br><br>
-
-                                                                                Fellas… this is your sign to spoil
-                                                                                the<br>
-                                                                                mrs. Enjoy your exclusive Drip
-                                                                                Culture<br>
-                                                                                discount on us!
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td>Y-London</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/image022.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                IG: @ylondonau <br>
-                                                                                Email: ylondonau@gmail.com<br>
-                                                                                Harbourside<br>
-                                                                                Suite 231/2-10 Darling Drive,
-                                                                                Darling<br>
-                                                                                Harbour NSW 2000<br><br>
-
-                                                                                Bankstown <br>
-                                                                                Bankstown Central – Level 2 North
-                                                                                Terrace, Bankstown NSW 2200<br>
-                                                                                Wetherill Park<br>
-                                                                                Wetherill Park Stocklands – Ground
-                                                                                561-583 Polding St, Wetherill Park NSW
-                                                                                2164<br>
-                                                                                Lidcombe<br>
-                                                                                Clearance Store 20 Parramatta Road,
-                                                                                Lidcombe NSW 2141
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                15% off<br>
-
-                                                                                How to redeem :<br>
-                                                                                Present your current membership card
-                                                                                to<br>
-                                                                                redeem discounts in-store.
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                Spanning over four cornerstone
-                                                                                locations<br>
-                                                                                in Sydney, Y-London offers exclusive<br>
-                                                                                designs for both men and women who
-                                                                                like<br>
-                                                                                to be individuals. Stand out, be
-                                                                                bold<br>
-                                                                                and be classy.
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Lebanese Drum Academy</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/image026.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Website:
-                                                                                www.lebanesedrumacademy.com.au<br><br>
-
-                                                                                IG: @lebanesedrumacademy<br>
-                                                                                Snapchat: @ldrumacademy<br>
-                                                                                (m): 0427 203 383
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                25% off lessons<br><br>
-
-                                                                                How to redeem :<br>
-                                                                                Present your current membership card
-                                                                                to<br>
-                                                                                redeem discounts in-store
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                An independent, professional and<br>
-                                                                                experienced training academy who<br>
-                                                                                specialises in training the next<br>
-                                                                                generation of world class performers
-                                                                                of<br>
-                                                                                the Lebanese drum (Tabel), Tarbuki<br>
-                                                                                (Tabil) and Maktoum.
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Barber Empire</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/image025.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Lane Cove <br>
-                                                                                7 Burns Bay Road, Lane Cove NSW 2066<br>
-                                                                                IG: @barberempireaus
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                10% off haircuts<br><br>
-
-                                                                                How to redeem :<br>
-                                                                                Present your current membership card
-                                                                                to<br>
-                                                                                redeem discounts in-store
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                Serving up the freshest cuts and<br>
-                                                                                boasting clients including some of<br>
-                                                                                Australia’s most popular talents,
-                                                                                such<br>
-                                                                                as Hooligan Hefs and Josh Addo Carr!
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Vamos Clothing</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/image027.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Website: <br>
-                                                                                www.vamosclothings.theprintbar.com<br>
-                                                                                IG: @vamos_clothing_
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                15% off all apparel<br><br>
-
-                                                                                How to redeem :<br>
-                                                                                Use code at checkout: 15%OFF<br>
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                A streetwear apparel brand that<br>
-                                                                                represents the hustlers within us
-                                                                                all<br>
-                                                                                who strive for more. Backed by some
-                                                                                of<br>
-                                                                                the biggest Rugby Union stars, Vamos<br>
-                                                                                Clothing is a brand that sees no
-                                                                                limit<br>
-                                                                                to how big they can grow!
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Queen St Car Hire</td>
-                                                                            <td>
-                                                                                <img style="width:150px"
-                                                                                    src="https://app.dripculture.com.au/newUi/partner/queenstar.png"
-                                                                                    alt="">
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-                                                                                Website: www.queenst.com.au <br>
-                                                                                IG: @queenstreetcustoms <br>
-
-                                                                            </td>
-                                                                            <td style="line-height: 1.3;">
-
-                                                                                10% off all car hires<br><br>
-
-                                                                                How to redeem :<br>
-                                                                                Present your current membership card
-                                                                                to<br>
-                                                                                redeem discounts in-store.
-                                                                            </td>
-
-                                                                            <td
-                                                                                style="line-height: 1.3; text-align: left !important;">
-
-                                                                                Queen St Hire provides cars and
-                                                                                bikes<br>
-                                                                                for hire in Sydney and its
-                                                                                surrounding<br>
-                                                                                areas. We possess a fleet of
-                                                                                top-notch<br>
-                                                                                cars that includes Rolls Royce,
-                                                                                Bentley,<br>
-                                                                                Lamborghini and Mercedes to name a
-                                                                                few.<br>
-
-                                                                            </td>
-                                                                            <td>
-                                                                               <button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr
-                                                                            class="text-center font-weight-bold color-danger">
-                                                                            <td colspan="5">
-                                                                                <h3
-                                                                                    class="text-center font-weight-bold color-danger">
-                                                                                    MANY MORE PARTNERS COMING SOON!</h3>
-
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
+                                                                                </td>
+
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>Bikerr</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/bikerr-300x120.jpeg"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Website: www.bikerr.com.au <br>
+                                                                                    IG: @bikerr_aus <br>
+                                                                                    Email: info@bikerr.com.au
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    5% off & free shipping on most
+                                                                                    brands
+                                                                                    <br>(exceptions: R&G, Evantech,
+                                                                                    Hoglights)
+                                                                                    <br>
+                                                                                    How to redeem : <br>
+                                                                                    use code at checkout: DRIP2021
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    An Australian owned and run online
+                                                                                    <br>
+                                                                                    store for motorcycle parts from <br>
+                                                                                    a
+                                                                                    wide range of premium brands.
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+
+
+                                                                            <tr>
+                                                                                <td>Swanky Array</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/swanky-array-300x208.jpeg"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Website: www.bikerr.com.au <br>
+                                                                                    IG: @bikerr_aus <br>
+                                                                                    Email: info@bikerr.com.au
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    5% off & free shipping on most
+                                                                                    brands
+                                                                                    <br>(exceptions: R&G, Evantech,
+                                                                                    Hoglights)
+                                                                                    <br>
+                                                                                    How to redeem : <br>
+                                                                                    use code at checkout: DRIP2021
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    "Swanky Array was started in 2019 as
+                                                                                    <br> a platform geared towards
+                                                                                    connecting <br> the intrinsically
+                                                                                    linked
+                                                                                    music and art.
+                                                                                    <br>
+                                                                                    Swanky Array connects with local
+                                                                                    <br>
+                                                                                    artists and provides a space for our
+                                                                                    <br> community to relax and enjoy
+                                                                                    good
+                                                                                    <br> music while also offering space
+                                                                                    <br> to connect with others."
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+
+
+                                                                            <tr>
+                                                                                <td>Adonis Athletics</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/image7.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    "Website: www.adonisathletics.com.au
+                                                                                    <br><br>
+                                                                                    Paddington <br>
+                                                                                    385 Oxford Street, Paddington NSW
+                                                                                    2021
+                                                                                    <br>
+                                                                                    IG: @adonisathleticspaddington <br>
+                                                                                    Phone: 0431 691 934 <br>
+
+                                                                                    Castle Hill <br>
+                                                                                    Unit 16/8 Victoria Avenue, Castle
+                                                                                    Hill
+                                                                                    NSW 2154 <br>
+                                                                                    IG: @adonisathleticscastlehill <br>
+                                                                                    (m): 0431 691 934 <br>
+                                                                                    <br>
+                                                                                    Granville <br>
+                                                                                    Unit 13/40-44 Wellington Road, <br>
+                                                                                    South Granville NSW 2142 <br>
+                                                                                    IG: @adonisathleticsgranville <br>
+                                                                                    (m): 0431 691 934"
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    10% off apparel and protein powder
+                                                                                    <br>
+                                                                                    10% off 1 – 3 month memberships <br>
+                                                                                    30% off 4, 8 and 12 month
+                                                                                    memberships
+                                                                                    <br>
+                                                                                    How to redeem : <br>
+                                                                                    Present your current membership <br>
+                                                                                    card to redeem discounts in-store
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+
+                                                                                    "World-class strength and
+                                                                                    conditioning
+                                                                                    <br>
+                                                                                    facilities and a gym culture you
+                                                                                    simply
+                                                                                    <br>
+                                                                                    won’t find anywhere else! Adonis
+                                                                                    Athletics <br>
+                                                                                    members are among some of the
+                                                                                    world’s
+                                                                                    <br>
+                                                                                    strongest competitors. Featured on
+                                                                                    Men’s
+                                                                                    <br>
+                                                                                    Health as one of the best
+                                                                                    Powerlifting
+                                                                                    gyms <br>
+                                                                                    in Sydney, there is no better place
+                                                                                    to
+                                                                                    <br>
+                                                                                    improve your physical health and
+                                                                                    surround <br>
+                                                                                    yourself with a supportive
+                                                                                    community.
+                                                                                    <br>
+                                                                                    Pick your membership:
+                                                                                    <br>
+                                                                                    Full Coaching, Online Coaching, <br>
+                                                                                    Programming-Only & Non-Coaching."
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>EK Automotive</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/image3-768x181.jpeg"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Baulkham Hills 308 Windsor Road,
+                                                                                    Baulkham Hills NSW 2153 <br>
+                                                                                    Phone: (02) 9011 7330<br>
+                                                                                    IG: @ekautomotive_baulkhamhills<br>
+                                                                                    Gladesville Unit 1C/28 Buffalo Road,
+                                                                                    Gladesville NSW 2111<br>
+                                                                                    Phone: (02) 9809 3013<br>
+                                                                                    IG: @ek_automotive_gladesville
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    Free service (not including parts
+                                                                                    and
+                                                                                    oil)<br>
+                                                                                    Free wheel alignment<br>
+                                                                                    Free Pink Slip<br>
+                                                                                    Gladesville<br>
+                                                                                    Free service (not including parts
+                                                                                    and
+                                                                                    oil)<br>
+                                                                                    25% off ECU tune<br>
+                                                                                    How to redeem :<br>
+                                                                                    Present your current membership card
+                                                                                    to
+                                                                                    redeem discounts in-store
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    Local automotive mechanics with over
+                                                                                    30<br>
+                                                                                    years’ experience servicing all
+                                                                                    makes<br>
+                                                                                    and models!
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Iimaje</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/image021.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    IG: @iimajeofficial<br>
+                                                                                    Email: iimajeclothing@gmail.com<br>
+                                                                                    Hurstville<br>
+                                                                                    Hurstville Westfield The Avenue,
+                                                                                    Hurstville NSW 2220 2000<br>
+                                                                                    Liverpool<br>
+                                                                                    Liverpool Westfield Macquarie St,
+                                                                                    Liverpool NSW 2170
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    15% off<br>
+
+                                                                                    How to redeem :<br>
+                                                                                    Present your current membership card
+                                                                                    to<br>
+                                                                                    redeem discounts in-store.
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    Get the latest in season clothing
+                                                                                    for
+                                                                                    an<br>
+                                                                                    exclusive discount! Pay less, get
+                                                                                    more…<br>
+                                                                                    It’s that simple when you’re a
+                                                                                    member
+                                                                                    of<br>
+                                                                                    Drip Culture.
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Dilvin</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/dilvin-300x150.jpeg"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Website: dilvinaustralia.com<br>
+                                                                                    Email: info@dilvinaustralia.com<br>
+                                                                                    IG: @dilvinaustralia
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    15% off<br>
+
+                                                                                    How to redeem :<br>
+                                                                                    Use code at checkout: dripculture15
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    Ladies… here is your opportunity
+                                                                                    to<br>
+                                                                                    catch a bargain on the latest
+                                                                                    fashion<br>
+                                                                                    wear.<br><br>
+
+                                                                                    Fellas… this is your sign to spoil
+                                                                                    the<br>
+                                                                                    mrs. Enjoy your exclusive Drip
+                                                                                    Culture<br>
+                                                                                    discount on us!
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td>Y-London</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/image022.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    IG: @ylondonau <br>
+                                                                                    Email: ylondonau@gmail.com<br>
+                                                                                    Harbourside<br>
+                                                                                    Suite 231/2-10 Darling Drive,
+                                                                                    Darling<br>
+                                                                                    Harbour NSW 2000<br><br>
+
+                                                                                    Bankstown <br>
+                                                                                    Bankstown Central – Level 2 North
+                                                                                    Terrace, Bankstown NSW 2200<br>
+                                                                                    Wetherill Park<br>
+                                                                                    Wetherill Park Stocklands – Ground
+                                                                                    561-583 Polding St, Wetherill Park
+                                                                                    NSW
+                                                                                    2164<br>
+                                                                                    Lidcombe<br>
+                                                                                    Clearance Store 20 Parramatta Road,
+                                                                                    Lidcombe NSW 2141
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    15% off<br>
+
+                                                                                    How to redeem :<br>
+                                                                                    Present your current membership card
+                                                                                    to<br>
+                                                                                    redeem discounts in-store.
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    Spanning over four cornerstone
+                                                                                    locations<br>
+                                                                                    in Sydney, Y-London offers
+                                                                                    exclusive<br>
+                                                                                    designs for both men and women who
+                                                                                    like<br>
+                                                                                    to be individuals. Stand out, be
+                                                                                    bold<br>
+                                                                                    and be classy.
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Lebanese Drum Academy</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/image026.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Website:
+                                                                                    www.lebanesedrumacademy.com.au<br><br>
+
+                                                                                    IG: @lebanesedrumacademy<br>
+                                                                                    Snapchat: @ldrumacademy<br>
+                                                                                    (m): 0427 203 383
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    25% off lessons<br><br>
+
+                                                                                    How to redeem :<br>
+                                                                                    Present your current membership card
+                                                                                    to<br>
+                                                                                    redeem discounts in-store
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    An independent, professional and<br>
+                                                                                    experienced training academy who<br>
+                                                                                    specialises in training the next<br>
+                                                                                    generation of world class performers
+                                                                                    of<br>
+                                                                                    the Lebanese drum (Tabel),
+                                                                                    Tarbuki<br>
+                                                                                    (Tabil) and Maktoum.
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Barber Empire</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/image025.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Lane Cove <br>
+                                                                                    7 Burns Bay Road, Lane Cove NSW
+                                                                                    2066<br>
+                                                                                    IG: @barberempireaus
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    10% off haircuts<br><br>
+
+                                                                                    How to redeem :<br>
+                                                                                    Present your current membership card
+                                                                                    to<br>
+                                                                                    redeem discounts in-store
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    Serving up the freshest cuts and<br>
+                                                                                    boasting clients including some
+                                                                                    of<br>
+                                                                                    Australia’s most popular talents,
+                                                                                    such<br>
+                                                                                    as Hooligan Hefs and Josh Addo Carr!
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Vamos Clothing</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/image027.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Website: <br>
+                                                                                    www.vamosclothings.theprintbar.com<br>
+                                                                                    IG: @vamos_clothing_
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    15% off all apparel<br><br>
+
+                                                                                    How to redeem :<br>
+                                                                                    Use code at checkout: 15%OFF<br>
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    A streetwear apparel brand that<br>
+                                                                                    represents the hustlers within us
+                                                                                    all<br>
+                                                                                    who strive for more. Backed by some
+                                                                                    of<br>
+                                                                                    the biggest Rugby Union stars,
+                                                                                    Vamos<br>
+                                                                                    Clothing is a brand that sees no
+                                                                                    limit<br>
+                                                                                    to how big they can grow!
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Queen St Car Hire</td>
+                                                                                <td>
+                                                                                    <img style="width:150px"
+                                                                                        src="https://app.dripculture.com.au/newUi/partner/queenstar.png"
+                                                                                        alt="">
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+                                                                                    Website: www.queenst.com.au <br>
+                                                                                    IG: @queenstreetcustoms <br>
+
+                                                                                </td>
+                                                                                <td style="line-height: 1.3;">
+
+                                                                                    10% off all car hires<br><br>
+
+                                                                                    How to redeem :<br>
+                                                                                    Present your current membership card
+                                                                                    to<br>
+                                                                                    redeem discounts in-store.
+                                                                                </td>
+
+                                                                                <td
+                                                                                    style="line-height: 1.3; text-align: left !important;">
+
+                                                                                    Queen St Hire provides cars and
+                                                                                    bikes<br>
+                                                                                    for hire in Sydney and its
+                                                                                    surrounding<br>
+                                                                                    areas. We possess a fleet of
+                                                                                    top-notch<br>
+                                                                                    cars that includes Rolls Royce,
+                                                                                    Bentley,<br>
+                                                                                    Lamborghini and Mercedes to name a
+                                                                                    few.<br>
+
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn btn-primary p-10"
+                                                                                        onclick="download_cupon()">
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-down"></i>
+                                                                                    </button>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                            <tr
+                                                                                class="text-center font-weight-bold color-danger">
+                                                                                <td colspan="5">
+                                                                                    <h3
+                                                                                        class="text-center font-weight-bold color-danger">
+                                                                                        MANY MORE PARTNERS COMING SOON!
+                                                                                    </h3>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
 
 
@@ -1295,7 +1409,7 @@
     <script src="js/lib/bootstrap/js/popper.min.js"></script>
     <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
 
-      <!-- slimscrollbar scrollbar JavaScript -->
+    <!-- slimscrollbar scrollbar JavaScript -->
     <script src="js/jquery.slimscroll.js"></script>
     <!--Menu sidebar -->
     <script src="js/sidebarmenu.js"></script>
