@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <title>DRIP CULTURE</title>
 
     <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
@@ -26,6 +27,8 @@
     <!-- Custom CSS -->
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
     <!--[if lt IE 9]>
@@ -263,8 +266,9 @@
                                                         </div>
                                                         <div class="col-md-3 mb-3">
                                                             <div class="price-card diamond text-center">
-                                                                <div class="price-tag w-100">Most Changes</div>
-                                                                <h2 class="price-name">Diamond Package<br><span>(one-time
+                                                                <div class="price-tag w-100">Most Chances</div>
+                                                                <h2 class="price-name">Diamond
+                                                                    Package<br><span>(one-time
                                                                         payment)</span></h2>
                                                                 <h1 class="price-b">$400</h1>
                                                                 <h3 class="price-entries mb-2">100 ENTRIES</h3>
@@ -279,8 +283,8 @@
                                                                 <button class="btn btn-price">DIAMOND - 400$</button>
                                                             </div>
                                                         </div>
-                                                       
-                                                         <!-- Price Cards End-->
+
+                                                        <!-- Price Cards End-->
                                                     </div>
 
                                                 </div>
@@ -300,7 +304,7 @@
                                                                                 <th>Package </th>
                                                                                 <th>Payment Date </th>
                                                                                 <th>Membership Status</th>
-                                                                                
+
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
@@ -316,7 +320,7 @@
                                                                                 <td> <span
                                                                                         class="badge badge-success">Active
                                                                                     </span> </td>
-                                                                                
+
                                                                             </tr>
 
                                                                             <tr>
@@ -331,7 +335,7 @@
                                                                                 <td> <span
                                                                                         class="badge badge-danger">Expired
                                                                                     </span> </td>
-                                                                               
+
                                                                             </tr>
 
                                                                             <tr>
@@ -346,7 +350,7 @@
                                                                                 <td> <span
                                                                                         class="badge badge-success">Active
                                                                                     </span> </td>
-                                                                                
+
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -535,13 +539,13 @@
                                         <div class="tab-pane p-10" id="profile" role="tabpanel">
                                             <!-- Coupon Gen -->
                                             <style>
-                                                #photo {
+                                                .photo {
                                                     width: 500px;
                                                     height: 300px;
                                                     /* margin: 30px; */
-                                                    display: block;
+                                                    /* display: block;
                                                     position: absolute;
-                                                    top: -100%;
+                                                    top: -100%; */
 
                                                 }
 
@@ -554,12 +558,12 @@
                                                 .coupon {
                                                     background-repeat: no-repeat;
                                                     background-position: center;
-                                                    background-size: cover;
+                                                    background-size: auto;
                                                     background-image: url(images/cupontemplate.jpg);
                                                     border-radius: 0;
                                                     height: 100%;
                                                     width: 100%;
-                                                    padding: 20px 5px 5px 70px;
+                                                    padding: 45px 5px 5px 70px;
                                                     margin: 0;
                                                 }
 
@@ -589,53 +593,17 @@
 
 
                                             <!-- Coupon/ Capture Canvas -->
-                                            <div id="photo">
-                                                <div id="capture" class="align-middle text-white row coupon">
-                                                    <!-- Partner Logo  -->
-                                                    <div class="col-12 "><img class="c_partner_logo"
-                                                            src="partner/image021.png" alt="Card image cap">
-                                                        <!-- User Name on Coupon -->
-                                                        <h2 class="c_name">RAJA TAYYAB</h2>
-                                                        <!-- Discount Percentage -->
-                                                        <h1 class="c_discount-number">25% Off</h1>
-                                                        <!-- Discount Description -->
-                                                        <p class="c_text"> VR and online escape rooms </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Coupon/ Capture Canvas End-->
-                                            <!-- Canvas Output -->
+                                            <!-- <div id="photo">
+
+                                            </div> -->
+
+
+
                                             <div id="output"></div>
-                                            <!-- Canvas Output End-->
-
-                                            <!-- Coupon Gen Script -->
-
-                                            <script>
-                                                function download_cupon() {
-                                                    let div = document.getElementById('capture');
-
-                                                    html2canvas(div, {
-                                                        allowTaint: true
-                                                    }).then(
-                                                        function (canvas) {
-                                                            document.getElementById('output').appendChild(canvas).setAttribute("id", "mcanvas");
-                                                            var mcanvas = document.getElementById("mcanvas");
-                                                            image = mcanvas.toDataURL("image/jpg").replace("image/jpg", 1.0, "image/octet-stream");
-                                                            var link = document.createElement('a');
-                                                            link.download = "cupon.png";
-                                                            link.href = image;
-                                                            link.click();
 
 
-                                                        });
 
 
-                                                }
-                                            </script>
-
-                                            <!-- Coupon Gen Script End-->
-
-                                            <!-- Coupon Gen End -->
                                             <div class="row">
                                                 <div class="col-sm-12 p-0">
                                                     <div class="card">
@@ -754,20 +722,14 @@
                                                                                 </ul>
                                                                             </td>
                                                                             <td>
-
-
-                                                                                <!-- Button trigger modal -->
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    id="btn-Preview-Image"
+                                                                                    data-toggle="modal"
+                                                                                    data-target="#exampleModal">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
-                                                                                <!--<button class="btn btn-primary p-10" onclick="download_cupon()">
-                                                                                    <i
-                                                                                        class="bi bi-file-earmark-arrow-down"></i>
-                                                                                </button> -->
                                                                             </td>
-
                                                                         </tr>
 
                                                                         <tr>
@@ -804,7 +766,9 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    id="btn-Preview-Image1"
+                                                                                    data-toggle="modal"
+                                                                                    data-target="#exampleModal1">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
@@ -854,7 +818,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon2()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
@@ -940,12 +904,13 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon3()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+
                                                                         <tr>
                                                                             <td>EK Automotive</td>
                                                                             <td>
@@ -994,12 +959,13 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon4()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+
                                                                         <tr>
                                                                             <td>Iimaje</td>
                                                                             <td>
@@ -1044,12 +1010,14 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon5()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+
+
                                                                         <tr>
                                                                             <td>Dilvin</td>
                                                                             <td>
@@ -1089,7 +1057,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon6()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
@@ -1150,12 +1118,14 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon7()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+
+
                                                                         <tr>
                                                                             <td>Lebanese Drum Academy</td>
                                                                             <td>
@@ -1197,12 +1167,14 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon8()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+
+
                                                                         <tr>
                                                                             <td>Barber Empire</td>
                                                                             <td>
@@ -1240,12 +1212,14 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon9()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+
+
                                                                         <tr>
                                                                             <td>Vamos Clothing</td>
                                                                             <td>
@@ -1284,12 +1258,14 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon10()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
                                                                             </td>
                                                                         </tr>
+
+
                                                                         <tr>
                                                                             <td>Queen St Car Hire</td>
                                                                             <td>
@@ -1329,7 +1305,7 @@
                                                                             </td>
                                                                             <td>
                                                                                 <button class="btn btn-primary p-10"
-                                                                                    onclick="download_cupon()">
+                                                                                    onclick="download_cupon11()">
                                                                                     <i
                                                                                         class="bi bi-file-earmark-arrow-down"></i>
                                                                                 </button>
@@ -1378,6 +1354,68 @@
         </div>
         <!-- End Page wrapper  -->
     </div>
+    <div id="previewImage">
+    </div>
+
+
+    <!-- Modalsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body photo">
+                    <div id="capture-000" class="align-middle text-white row coupon">
+                        <div class="">
+                            <img id="img_card" class="c_partner_logo" src="./partner/entermission-300x129.png"
+                                alt="Card image cap">
+
+                            <h2 class="c_name">RAJA TAYYAB</h2>
+
+                            <h1 id="c_discount" class="c_discount-number">10% off</h1>
+
+                            <p class="c_text" id="c_text"> VR and online escape rooms </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" id="btn-Convert-Html2Image" href="#" class="btn btn-primary">Download</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body photo">
+                    <div id="capture-001" class="align-middle text-white row coupon">
+                        <div class=" ">
+                            <img id="img_card" class="c_partner_logo" src="./partner/bikerr-300x120.jpeg"
+                                alt="Card image cap">
+
+                            <h2 class="c_name">RAJA TAYYAB</h2>
+
+                            <h1 id="c_discount" class="c_discount-number">10% off</h1>
+
+                            <p class="c_text" id="c_text"> VR and online escape rooms </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" id="btn-Convert-Html2Image1" href="#" class="btn btn-primary">Download</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modalsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
     <!-- End Wrapper -->
     <!-- All Jquery -->
 
@@ -1416,7 +1454,8 @@
             }
         }, 1000);
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="js/lib/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
@@ -1459,6 +1498,64 @@
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
 
+    <script src="./generateCard.js"></script>
+
+    <!-- <script src="js/html2canvas.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
 </body>
 
 </html>
+
+
+<script>
+    var element = $("#capture-000");
+    var element1 = $("#capture-001");
+
+    var getCanvas; // global variable
+
+    $("#btn-Preview-Image").on('click', function () {
+        html2canvas(element, {
+            allowTaint: true,
+            onrendered: function (canvas) {
+                $("#previewImage").html("");
+                $("#previewImage").append(canvas);
+                getCanvas = canvas;
+            }
+        });
+    });
+
+    $("#btn-Preview-Image1").on('click', function () {
+        html2canvas(element1, {
+            allowTaint: true,
+            onrendered: function (canvas) {
+                $("#previewImage").html("");
+                $("#previewImage").append(canvas);
+                getCanvas = canvas;
+            }
+        });
+    });
+
+    $("#btn-Convert-Html2Image").on('click', function () {
+        console.log(getCanvas)
+        var imgageData = getCanvas.toDataURL("image/png");
+        console.log(imgageData)
+
+        // Now browser starts downloading it instead of just showing it
+        var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+        $("#btn-Convert-Html2Image").attr("download", "your_pic_name.png").attr("href", newData);
+    });
+
+
+    $("#btn-Convert-Html2Image1").on('click', function () {
+        console.log(getCanvas)
+        var imgageData = getCanvas.toDataURL("image/png");
+        console.log(imgageData)
+
+        // Now browser starts downloading it instead of just showing it
+        var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+        $("#btn-Convert-Html2Image1").attr("download", "your_pic_name.png").attr("href", newData);
+    });
+
+</script>
